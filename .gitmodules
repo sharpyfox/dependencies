@@ -1,0 +1,9 @@
+[submodule "citrusleaf-client"]
+	path = citrusleaf-client
+	url = https://github.com/sharpyfox/citrusleaf-client.git
+[submodule "thrift"]
+	path = thrift
+	url = https://github.com/sharpyfox/thrift.git
+[submodule "cassandra_libs_installer"]
+	path = cassandra_libs_installer
+	url = https://github.com/sharpyfox/cassandra_libs_installer.git
