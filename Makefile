@@ -11,3 +11,9 @@ install_thrift:
 
 install_cassandra_lib:
 	cd cassandra_libs_installer && cmake . -DCMAKE_INSTALL_PREFIX=$(TARGET) && make && make install
+
+install_rabbitmq_c:
+	cd rabbitmq-c && cmake . -DCMAKE_INSTALL_PREFIX=$(TARGET) && make && make install
+
+install_simple_amqp_client:
+	cd SimpleAmqpClient && mkdir build && cd build && cmake . -DCMAKE_INSTALL_PREFIX=$(TARGET) -DBOOST_ROOT=$(TARGET) && cmake --build . --target install
