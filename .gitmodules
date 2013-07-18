@@ -7,3 +7,9 @@
 [submodule "cassandra_libs_installer"]
 	path = cassandra_libs_installer
 	url = https://github.com/sharpyfox/cassandra_libs_installer.git
+[submodule "rabbitmq-c"]
+	path = rabbitmq-c
+	url = https://github.com/sharpyfox/rabbitmq-c.git
+[submodule "SimpleAmqpClient"]
+	path = SimpleAmqpClient
+	url = https://github.com/sharpyfox/SimpleAmqpClient.git
