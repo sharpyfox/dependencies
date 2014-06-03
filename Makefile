@@ -1,7 +1,7 @@
 # Determine where the install directory is located.
 TARGET?=$(HOME)/local
 
-all: install_citrusleaf_client install_thrift install_cassandra_lib
+all: install_citrusleaf_client install_rabbitmq_c install_simple_amqp_client
 
 install_citrusleaf_client:
 	cd citrusleaf-client && make && make install PREFIX=$(TARGET)
