@@ -1,7 +1,10 @@
 # Determine where the install directory is located.
 TARGET?=$(HOME)/local
 
-all: install_rabbitmq_c install_simple_amqp_client
+all: install_rabbitmq_c install_simple_amqp_client install_aerospike
+
+install_aerospike:
+	cd aerospike-client-c && export CPATH=$CPATH:/usr/include/lua5.1 && make && cp -avr target/*/include/* $(TARGET)/include && cp target/*/lib/* $(TARGET)/lib
 
 install_thrift:
 	cd thrift && ./bootstrap.sh && JAVA_PREFIX=$(TARGET) ./configure --prefix $(TARGET) --without-ruby --without-python --without-erlang --without-php --with-boost=$(TARGET)/ && (make -k install)

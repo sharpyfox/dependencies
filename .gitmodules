@@ -10,3 +10,6 @@
 [submodule "SimpleAmqpClient"]
 	path = SimpleAmqpClient
 	url = https://github.com/sharpyfox/SimpleAmqpClient.git
+[submodule "aerospike-client-c"]
+	path = aerospike-client-c
+	url = https://github.com/aerospike/aerospike-client-c.git
