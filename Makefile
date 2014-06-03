@@ -1,10 +1,7 @@
 # Determine where the install directory is located.
 TARGET?=$(HOME)/local
 
-all: install_citrusleaf_client install_rabbitmq_c install_simple_amqp_client
-
-install_citrusleaf_client:
-	cd citrusleaf-client && make && make install PREFIX=$(TARGET)
+all: install_rabbitmq_c install_simple_amqp_client
 
 install_thrift:
 	cd thrift && ./bootstrap.sh && JAVA_PREFIX=$(TARGET) ./configure --prefix $(TARGET) --without-ruby --without-python --without-erlang --without-php --with-boost=$(TARGET)/ && (make -k install)
