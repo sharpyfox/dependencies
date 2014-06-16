@@ -14,7 +14,7 @@ project dependencies
 
 	git submodule update --init --recursive
 
-ПРоект собирается командой:
+Проект собирается командой:
 
 	$ make
 	
